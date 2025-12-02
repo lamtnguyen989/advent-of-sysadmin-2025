@@ -1,0 +1,7 @@
+docker ps > docker-ps.txt
+
+
+CONTAINER ID   IMAGE          COMMAND                  CREATED        STATUS              PORTS                                 NAMES
+89bf0e394bb9   statichtml:2   "busybox httpd -f -v…"   13 hours ago   Up About a minute   3000/tcp                              statichtml2
+1f96c1876662   statichtml:1   "busybox httpd -f -v…"   13 hours ago   Up About a minute   3000/tcp                              statichtml1
+7440094fc321   nginx          "/docker-entrypoint.…"   13 hours ago   Up About a minute   0.0.0.0:80->80/tcp, [::]:80->80/tcp   nginx

@@ -1,0 +1,29 @@
+docker inspect nginx statichtml1 statichtml2 | grep -A 5 Networks
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "da:9e:8b:93:ae:9a",
+--
+            "Networks": {
+                "static-net": {
+                    "IPAMConfig": {
+                        "IPv4Address": "172.172.0.11"
+                    },
+                    "Links": null,
+--
+            "Networks": {
+                "static-net": {
+                    "IPAMConfig": {
+                        "IPv4Address": "172.172.0.12"
+                    },
+                    "Links": null,
+
+
+docker network ls
+NETWORK ID     NAME         DRIVER    SCOPE
+69178b8df1a1   bridge       bridge    local
+a7250a90f896   host         host      local
+b08d312e9d16   none         null      local
+cc3e04c023f1   static-net   bridge    local
