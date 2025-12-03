@@ -1,2 +1,2 @@
 # advent-of-sysadmin-2025
-Repository holding my solutions to 2025 Advent of Sysadmin
+Repository holding my solutions to 2025 Advent of Sysadmin challenge on [SadServers](https://sadservers.com/advent)
